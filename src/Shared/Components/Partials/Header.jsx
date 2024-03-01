@@ -1,9 +1,11 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
+import ColorPalette from '../../Contents/ColorPalette';
 
 const Header = () => {
 
-  const [isScrolled, setIsScrolled] = useState(false)
+  const [ isScrolled, setIsScrolled   ] = useState(false)
+  const { headerColorBG, headercolorScrolled, headercolorNotScrolled } = ColorPalette()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,14 +20,11 @@ const Header = () => {
     }
   }, []);
 
-  const colorTrue = "#ffffff" // isScrolled 
-  const colorFalse = "#1F1717" // notScrolled
-
   const textChanger = () => {
     if (isScrolled) {
-      return colorTrue
+      return headercolorScrolled
     } else {
-      return colorFalse
+      return headercolorNotScrolled
     }
   }
 
@@ -34,7 +33,7 @@ const Header = () => {
   }
 
   return (
-    <header className={`bg-[#CE5A67] fixed w-full py-4 px-10 ${isScrolled ? ' shadow-md bg-cyan-700' : 'bg-cyan-700 bg-opacity-0'}`} style={{ transition: 'background-color 0.3s' }}>
+    <header className={`bg-[${headerColorBG}] fixed w-full py-4 px-10 ${isScrolled ? ' shadow-md bg-cyan-700' : 'bg-cyan-700 bg-opacity-0'}`} style={{ transition: 'background-color 0.3s' }}>
       <nav className="container mx-auto flex flex-col lg:flex-row lg:justify-between items-center">
         <a href="/" className={`text-xl text-[${textChanger()}] font-bold mb-4 lg:mb-0 ${transition()}`}>Home</a>
         <div>
