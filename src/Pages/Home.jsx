@@ -1,35 +1,33 @@
 import React from 'react';
 
 const Home = () => {
+
+  const fontColor = "#1F1717"
+  const buttonBG = "#CE5A67"
+  const bg = "#FCF5ED"
+  
   return (
-    <div className="bg-[#FFF7F1] flex flex-col lg:flex-row items-center justify-center min-h-screen">
-    <section class="py-10 bg-[#FFF7F1] sm:py-16 lg:py-24">
-        <div class="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
-            <div class="grid items-center grid-cols-1 gap-y-6 md:grid-cols-2 md:gap-x-20">
-                <div class="">
-                  <h2 class="text-3xl font-bold leading-tight text-[#A7727D] sm:text-4xl lg:text-5xl transition duration-500 transform hover:scale-105">Grow business with Celebration.</h2>
-                  <p class="mt-4 text-base leading-relaxed text-gray-600">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                </div>
-
-                <div class="relative pl-20 pr-6 sm:pl-6 md:px-0">
-                    <div class="relative w-full max-w-xs mt-4 mb-10 ml-auto">
-                        <img class="ml-auto" src="https://cdn.rareblocks.xyz/collection/celebration/images/features/1/person.jpg" alt="" />
-
-                        <img class="absolute -top-4 -left-12" src="https://cdn.rareblocks.xyz/collection/celebration/images/features/1/wavey-lines.svg" alt="" />
-
-                        <div class="absolute -bottom-10 -left-16">
-                            <div class="bg-yellow-300">
-                                <div class="px-8 py-10">
-                                    <span class="block text-4xl font-bold text-black lg:text-5xl"> 53% </span>
-                                    <span class="block mt-2 text-base leading-tight text-black"> High Conversions<br />Everything </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div className={`bg-[${bg}] flex flex-col lg:flex-row items-center justify-center min-h-screen`}>
+      <section className="py-10 bg-[#FFF7F1] sm:py-16 lg:py-24">
+        <div className="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
+          <div className="grid items-center grid-cols-1 gap-y-6 md:grid-cols-2 md:gap-x-20">
+            <div className="text-center md:text-left">
+              <h1 className={`transition duration-2000 transform hover:scale-105 text-3xl font-bold leading-tight text-[${fontColor}] sm:text-9xl lg:text-8xl`} style={{ textShadow: '2px 2px 4px rgba(39, 120, 225, 0.3)' }}>Bryan Ken Altes</h1>
+              <h3 className={`transition duration-2000 transform hover:scale-105 text-3xl mt-4 text-base leading-relaxed text-[${fontColor}]`} style={{ textShadow: '1px 1px 2px rgba(39, 120, 225, 0.3)' }}>
+                I'm back-end developer
+              </h3>
+              <br />
+              <a href="/Project" className={`bg-[${buttonBG}] hover:bg-blue-600 text-white font-bold py-2 px-4 rounded font-mono`}>View Projects</a>
             </div>
+
+            <div className="relative pl-0 md:pl-20 pr-6 sm:pl-6 md:px-0">
+              <div className="relative w-full max-w-xs mt-4 mb-10 mx-auto md:ml-auto">
+                <img className="mx-auto md:mx-0" src="https://ouch-cdn2.icons8.com/vZD-nOO0-rKGloPBW0WjLQF-i8hfkpa7QWY_3L4YTGA/rs:fit:684:456/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvMzAx/L2Y1ZWI5ZGEwLTM3/ZWMtNDUxYy1iODNl/LTVjMzc1NGU5NjQx/NC5zdmc.png" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
     </div>
   );
 }

@@ -18,8 +18,8 @@ const Header = () => {
     }
   }, []);
 
-  const colorTrue = "#A7727D" // isScrolled
-  const colorFalse = "#867070" // notScrolled
+  const colorTrue = "#ffffff" // isScrolled 
+  const colorFalse = "#1F1717" // notScrolled
 
   const textChanger = () => {
     if (isScrolled) {
@@ -29,15 +29,18 @@ const Header = () => {
     }
   }
 
+  const transition = () => {
+    return "transition duration-500 transform hover:scale-150"
+  }
+
   return (
-    <header className={`bg-[#F8E8EE] fixed w-full text-white py-4 px-10 ${isScrolled ? 'bg-cyan-700' : 'bg-cyan-700 bg-opacity-0'}`} style={{ transition: 'background-color 0.3s' }}>
+    <header className={`bg-[#CE5A67] fixed w-full py-4 px-10 ${isScrolled ? ' shadow-md bg-cyan-700' : 'bg-cyan-700 bg-opacity-0'}`} style={{ transition: 'background-color 0.3s' }}>
       <nav className="container mx-auto flex flex-col lg:flex-row lg:justify-between items-center">
-        <a href="/" className={`text-xl text-[${textChanger()}] font-bold mb-4 lg:mb-0`}>Home</a>
+        <a href="/" className={`text-xl text-[${textChanger()}] font-bold mb-4 lg:mb-0 ${transition()}`}>Home</a>
         <div>
-          {console.log(textChanger())}
-          <a href="/Project" className={`text-[${textChanger()}] hover:text-gray-300 mr-4`}>Projects</a>
-          <a href="/Resume" className={`text-[${textChanger()}] hover:text-gray-300 mr-4`}>Resume</a>
-          <a href="/Contact" className={`text-[${textChanger()}] hover:text-gray-300`}>Contact</a>
+          <a href="/Project" className={`text-[${textChanger()}] hover:text-black mr-4`}>Projects</a>
+          <a href="/Resume" className={`text-[${textChanger()}] hover:text-black-300 mr-4`}>Resume</a>
+          <a href="/Contact" className={`text-[${textChanger()}] hover:text-black-300`}>Contact</a>
         </div>
       </nav>
     </header>

@@ -2,42 +2,94 @@ import React from 'react'
 
 const TestingPage = () => {
   return (
-    <div>
-        <section class="py-10 bg-gray-50 sm:py-16 lg:py-24">
-            <div class="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
-                <div class="grid items-center md:grid-cols-2 md:gap-x-20 gap-y-10">
-                    <div class="relative pl-16 pr-10 sm:pl-6 md:pl-0 xl:pr-0 md:order-2">
-                        <img class="absolute top-6 -right-4 xl:-right-12" src="https://cdn.rareblocks.xyz/collection/celebration/images/features/3/dots-pattern.svg" alt="" />
+<section class="py-10 bg-gray-100 sm:py-16 lg:py-24">
+    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div class="max-w-2xl mx-auto text-center">
+            <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">What our customers say</h2>
+            <p class="max-w-lg mx-auto mt-4 text-base leading-relaxed text-gray-600">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis.</p>
+        </div>
 
-                        <div class="relative max-w-xs ml-auto">
-                            <div class="overflow-hidden aspect-w-3 aspect-h-4">
-                                <img class="object-cover w-full h-full scale-150" src="https://cdn.rareblocks.xyz/collection/celebration/images/features/3/man-woman-discussing.jpg" alt="" />
-                            </div>
+        <div class="grid grid-cols-1 gap-6 px-4 mt-12 sm:px-0 xl:mt-20 xl:grid-cols-4 sm:grid-cols-2">
 
-                            <div class="absolute bottom-0 -left-16">
-                                <div class="bg-yellow-300">
-                                    <div class="py-4 pl-4 pr-10 sm:py-6 sm:pl-8 sm:pr-16">
-                                        <svg class="w-9 sm:w-14 h-9 sm:h-14" xmlns="http://www.w3.org/2000/svg" fill="#FFF" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-                                        </svg>
-                                        <span class="block mt-3 text-xl font-bold text-black sm:mt-6 sm:text-4xl lg:text-5xl"> 2,984 </span>
-                                        <span class="block mt-2 text-sm font-medium leading-snug text-amber-900 sm:text-base"> Customer chat<br />served on July </span>
-                                    </div>
-                                </div>
-                            </div>
+            <div class="overflow-hidden bg-white rounded-md">
+                <div class="px-5 py-6">
+                    <div class="flex items-center justify-between">
+                        <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full" src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/7/avatar-1.jpg" alt="" />
+                        <div class="min-w-0 ml-3 mr-auto">
+                            <p class="text-base font-semibold text-black truncate">Darrell Steward</p>
+                            <p class="text-sm text-gray-600 truncate">@darrels</p>
                         </div>
+                        <a href="#" title="" class="inline-block text-sky-500">
+                            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"
+                                ></path>
+                            </svg>
+                        </a>
                     </div>
-
-                    <div class="md:order-1">
-                        <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">Grow business with Celebration.</h2>
-                        <p class="mt-4 text-base leading-relaxed text-gray-600">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-
-                        <a href="#" title="" class="inline-flex items-center justify-center px-8 py-3 mt-8 text-base font-semibold text-white transition-all duration-200 bg-blue-600 rounded-md hover:bg-blue-700 focus:bg-blue-700" role="button"> Start exploring </a>
-                    </div>
+                    <blockquote class="mt-5">
+                        <p class="text-base text-gray-800">
+                            You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change and click save.
+                            <span class="block text-sky-500">#another</span>
+                        </p>
+                    </blockquote>
                 </div>
             </div>
-        </section>
+
+            <div class="overflow-hidden bg-white rounded-md">
+                <div class="px-5 py-6">
+                    <div class="flex items-center justify-between">
+                        <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full" src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/7/avatar-2.jpg" alt="" />
+                        <div class="min-w-0 ml-3 mr-auto">
+                            <p class="text-base font-semibold text-black truncate">Leslie Alexander</p>
+                            <p class="text-sm text-gray-600 truncate">@lesslie</p>
+                        </div>
+                        <a href="#" title="" class="inline-block text-sky-500">
+                            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"
+                                ></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <blockquote class="mt-5">
+                        <p class="text-base text-gray-800">
+                            Simply the best. Better than all the rest. I’d recommend this product to beginners and advanced users.
+                            <span class="block text-sky-500">#Celebration</span>
+                        </p>
+                    </blockquote>
+                </div>
+            </div>
+
+            <div class="overflow-hidden bg-white rounded-md">
+                <div class="px-5 py-6">
+                    <div class="flex items-center justify-between">
+                        <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full" src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/7/avatar-3.jpg" alt="" />
+                        <div class="min-w-0 ml-3 mr-auto">
+                            <p class="text-base font-semibold text-black truncate">Jenny Wilson</p>
+                            <p class="text-sm text-gray-600 truncate">@jennywilson</p>
+                        </div>
+                        <a href="#" title="" class="inline-block text-sky-500">
+                            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"
+                                ></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <blockquote class="mt-5">
+                        <p class="text-base text-gray-800">
+                            This is a top quality product. No need to think twice before making it live on web.
+                            <span class="block text-sky-500">#make_it_fast</span>
+                        </p>
+                    </blockquote>
+                </div>
+            </div>
+            
+        </div>
     </div>
+</section>
+
   )
 }
 
