@@ -7,6 +7,7 @@ import Project from './Pages/Projects/Project'
 import Resume from './Pages/Resume'
 import Contact from './Pages/Contact'
 import NotFound from './Pages/NotFound'
+import SamplePage from './Pages/Test'
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Route path='/Project/:id' element={<Project />} />
           <Route path='/Resume' element={<Resume />} />
           <Route path='/Contact' element={<Contact />} />
+          <Route path='/Sample' element={<SamplePage />} />
         </Route>
         <Route path='*' element={<NotFound />} />
       </Routes>
