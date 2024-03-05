@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import MyResume from "../Shared/resources/MyResume.pdf";
 
 const Resume = () => {
   return (
-    <div>Resume</div>
-  )
-}
+    <div>
+      <iframe src={MyResume} width="100%" height="1000px" />
+    </div>
+  );
+};
 
-export default Resume
+export default Resume;
