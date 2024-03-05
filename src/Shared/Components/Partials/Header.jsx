@@ -33,8 +33,8 @@ const Header = () => {
           href="/"
           className={`${
             isScrolled
-              ? "text-custom-'text-custom-headercolorScrolled'"
-              : "text-custom-"
+              ? "text-custom-headercolorScrolled"
+              : "text-custom-headercolorNotScrolled"
           } font-bold mb-4 lg:mb-0 ${transition()}`}
         >
           Home
