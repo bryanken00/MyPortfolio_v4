@@ -7,25 +7,19 @@ const SkillsData = () => {
       image: "src/Shared/resources/Logo/database.png",
     },
     {
-      name: "Java",
+      name: "Java Swing",
       description:
         "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat.",
       image: "src/Shared/resources/Logo/java.png",
     },
     {
-      name: "React",
+      name: "ReactJS",
       description:
         "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat.",
       image: "src/Shared/resources/Logo/react.png",
     },
     {
-      name: "PHP",
-      description:
-        "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat.",
-      image: "src/Shared/resources/Logo/php.png",
-    },
-    {
-      name: "PHP",
+      name: "PHP Native",
       description:
         "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat.",
       image: "src/Shared/resources/Logo/php.png",
