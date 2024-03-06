@@ -20,7 +20,7 @@ const ProjectData = () => {
       Name: "Inventory System",
       Description:
         "Cras placerat pretium erat eget placerat. Ut non nisi quis turpis tincidunt fermentum. Sed pellentesque odio vitae hendrerit scelerisque. Integer vulputate semper odio rhoncus accumsan. Nunc semper turpis tortor, vel porta ex molestie eu. Fusce vel lorem ut est tempus congue. Suspendisse eget vehicula dolor, cursus viverra risus. Vivamus consequat accumsan faucibus. Suspendisse id nisl sed dolor imperdiet viverra semper eget elit. Vestibulum volutpat eget dui vitae laoreet.",
-      imgPath: KBNThesis,
+      imgPath: KNBSystem,
       path: path + "2",
       gitLink: "https://github.com/bryanken00/KBNThesisDev",
     },
