@@ -11,22 +11,17 @@ const Project = () => {
   if (!project) return <NotFound />;
 
   return (
-    <div className={`bg-custom-bg min-h-screen px-10 py-20`}>
-      <div
-        className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8"
-        style={{ paddingTop: "2rem" }}
-      >
-        <h2 className={`text-2xl font-bold mb-4 text-custom-fontColor`}>
+    <div className="bg-custom-bg min-h-screen px-4 py-20">
+      <div className="max-w-4xl mx-auto">
+        <h2 className="text-3xl font-bold mb-4 text-custom-fontColor">
           {project.Name}
         </h2>
-        <div className="project-description mb-6">
-          <p
-            className={`text-base text-custom-fontColor leading-relaxed text-justify text-custom-fontColor`}
-          >
+        <div className="mb-6">
+          <p className="text-base text-justify text-custom-fontColor">
             {project.Description}
           </p>
         </div>
-        <div className="project-image">
+        <div className="mb-6">
           <img
             src={project.imgPath}
             alt="Project Thumbnail"
@@ -36,7 +31,7 @@ const Project = () => {
         <div className="mt-4">
           <a
             href={project.gitLink}
-            className={`text-custom-fontColor text-base font-semibold underline hover:text-blue-600`}
+            className="text-base font-semibold text-custom-fontColor hover:text-custom-buttonHover"
             target="_blank"
             rel="noopener noreferrer"
           >
