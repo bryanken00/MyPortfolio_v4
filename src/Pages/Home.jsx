@@ -44,7 +44,7 @@ const Home = () => {
           </div>
         </section>
       </div>
-      <div>
+      <div className="bg-custom-bg ">
         <Skills />
       </div>
     </>

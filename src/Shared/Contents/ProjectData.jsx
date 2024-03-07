@@ -1,6 +1,7 @@
 import imgPath from "../resources/thumbnail.jpg";
 import KBNThesis from "../resources/Pictures/KBNThesis.png";
 import KNBSystem from "../resources/Pictures/Login.png";
+import ChatApp from "../resources/Pictures/ChatApp.png";
 
 const ProjectData = () => {
   const path = "/project/";
@@ -23,6 +24,16 @@ const ProjectData = () => {
       imgPath: KNBSystem,
       path: path + "2",
       gitLink: "https://github.com/bryanken00/KBNThesisDev",
+    },
+
+    {
+      key: 3,
+      Name: "Chat App",
+      Description:
+        "Cras placerat pretium erat eget placerat. Ut non nisi quis turpis tincidunt fermentum. Sed pellentesque odio vitae hendrerit scelerisque. Integer vulputate semper odio rhoncus accumsan. Nunc semper turpis tortor, vel porta ex molestie eu. Fusce vel lorem ut est tempus congue. Suspendisse eget vehicula dolor, cursus viverra risus. Vivamus consequat accumsan faucibus. Suspendisse id nisl sed dolor imperdiet viverra semper eget elit. Vestibulum volutpat eget dui vitae laoreet.",
+      imgPath: ChatApp,
+      path: path + "3",
+      gitLink: "https://github.com/bryanken00/ChatApp",
     },
   ];
   return { MyProject };

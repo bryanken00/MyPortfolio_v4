@@ -3,7 +3,7 @@ import React from "react";
 const Contact = () => {
   return (
     <>
-      <section className="py-10 bg-gray-100 sm:py-16 lg:py-24">
+      <section className="py-10 bg-custom-bg sm:py-16 lg:py-24">
         <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-3xl font-bold leading-tight text-gray-900 sm:text-4xl lg:text-5xl">
@@ -66,37 +66,37 @@ const Contact = () => {
                   </p>
                 </div>
               </div>
-
               <div className="overflow-hidden bg-white rounded-xl  transition duration-2000 transform hover:scale-110 hover:bg-gray-300">
-                <div className="p-6">
-                  <svg
-                    className="flex-shrink-0 w-10 h-10 mx-auto text-gray-400"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="1"
-                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                    />
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="1"
-                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                    />
-                  </svg>
-                  <a
-                    href="https://maps.app.goo.gl/CQCV5dcuzpqCGqR16"
-                    className="mt-6 text-lg font-medium leading-relaxed text-gray-900 block" // Add "block" class to make it behave like a block element
-                  >
-                    Del Rosario st. Brgy. Kalayaan <br />
-                    Angono, Rizal
-                  </a>
-                </div>
+                <a href="https://maps.app.goo.gl/CQCV5dcuzpqCGqR16">
+                  <div className="p-6">
+                    <svg
+                      className="flex-shrink-0 w-10 h-10 mx-auto text-gray-400"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="1"
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="1"
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                    </svg>
+                    <p
+                      className="mt-6 text-lg font-medium leading-relaxed text-gray-900 block" // Add "block" class to make it behave like a block element
+                    >
+                      Del Rosario st. Brgy. Kalayaan <br />
+                      Angono, Rizal
+                    </p>
+                  </div>
+                </a>
               </div>
             </div>
 
@@ -115,8 +115,6 @@ const Contact = () => {
                       <div className="mt-2.5 relative">
                         <input
                           type="text"
-                          name=""
-                          id=""
                           placeholder="Enter your full name"
                           className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600"
                         />
@@ -130,8 +128,6 @@ const Contact = () => {
                       <div className="mt-2.5 relative">
                         <input
                           type="email"
-                          name=""
-                          id=""
                           placeholder="Enter your full name"
                           className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600"
                         />
@@ -145,8 +141,6 @@ const Contact = () => {
                       <div className="mt-2.5 relative">
                         <input
                           type="tel"
-                          name=""
-                          id=""
                           placeholder="Enter your full name"
                           className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600"
                         />
@@ -160,8 +154,6 @@ const Contact = () => {
                       <div className="mt-2.5 relative">
                         <input
                           type="text"
-                          name=""
-                          id=""
                           placeholder="Enter your full name"
                           className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:border-blue-600 caret-blue-600"
                         />
@@ -174,9 +166,6 @@ const Contact = () => {
                       </label>
                       <div className="mt-2.5 relative">
                         <textarea
-                          name=""
-                          id=""
-                          placeholder=""
                           className="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md resize-y focus:outline-none focus:border-blue-600 caret-blue-600"
                           rows="4"
                         ></textarea>
